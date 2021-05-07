@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+    <TextView
+        android:text="The Calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/MainHeading"
+        android:layout_marginBottom="25.0dp"
+        android:autoLink="none"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@android:color/background_dark"
+        android:textColor="#ffff9100"
+        android:shadowColor="@android:color/holo_orange_dark"
+        android:textSize="@dimen/abc_action_button_min_width_overflow_material"
+        android:textStyle="bold|italic"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/txtNum1"
+        android:text="Number 1"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:paddingLeft="@dimen/abc_text_size_body_1_material" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="52.0dp"
+        android:id="@+id/Text1"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/black"
+        android:layout_margin="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:inputType="none|numberDecimal" />
+    <TextView
+        android:text="Number 2"
+        android:layout_width="match_parent"
+        android:layout_height="90.5dp"
+        android:id="@id/txtNum2"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:paddingLeft="@dimen/abc_text_size_body_1_material"
+        android:paddingTop="@android:dimen/app_icon_size"
+        android:layout_margin="@dimen/abc_action_bar_overflow_padding_end_material" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="51.5dp"
+        android:id="@+id/Text2"
+        android:background="@android:color/holo_orange_light"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:textColor="@android:color/black"
+        android:layout_margin="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:inputType="none|numberDecimal" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="384.0dp"
+        android:layout_height="120.0dp"
+        android:id="@+id/linearLayout1"
+        android:layout_marginTop="0.0dp"
+        android:background="@android:color/holo_red_light"
+        android:layout_margin="@dimen/abc_action_bar_icon_vertical_padding_material">
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/btnplus"
+            android:textSize="@dimen/abc_action_bar_default_height_material"
+            android:layout_margin="@dimen/abc_action_bar_elevation_material"/>
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/btnminus"
+            android:textSize="@dimen/abc_action_bar_default_height_material"
+            android:layout_margin="@dimen/abc_action_bar_elevation_material" />
+        <Button
+            android:text="*"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/btnmul"
+            android:textSize="@dimen/abc_action_bar_default_height_material"
+            android:layout_margin="@dimen/abc_action_bar_elevation_material" />
+        <Button
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:id="@id/btnDivide"
+            android:textSize="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_margin="@dimen/abc_action_bar_elevation_material" />
+    </LinearLayout>
+</LinearLayout>
+
